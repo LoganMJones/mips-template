@@ -1,5 +1,5 @@
 # Author:    Logan Jones
-# Date:      08//25
+# Date:      
 # Description: 
 
 
@@ -7,7 +7,13 @@
 .data
 
 
-
-
 # assembly instructions
 .text
+
+.globl main # globl procedures
+main: # main program
+
+
+exit: # exit the program
+    li $v0, 10
+    syscall 
